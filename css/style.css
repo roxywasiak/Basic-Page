@@ -1,31 +1,164 @@
-<!DOCTYPE html>
-<html lang="en">
+body{
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
+background:#eef2f5;
 
-    <link rel="stylesheet" href="css/style.css">
+font-family:Arial, sans-serif;
 
-</head>
+margin:0;
 
-<body>
-<h1>About Me</h1>
-    <p>Hello! My name is [Your Name], and I am a passionate web developer with a love for creating beautiful and functional websites. I have experience in HTML, CSS, JavaScript, and various web development frameworks. In my free time, I enjoy learning new technologies and improving my coding skills.</p>
+padding:40px;
 
-    <h2>Skills</h2>
-    <ul>
-        <li>HTML5</li>
-        <li>CSS3</li>
-        <li>JavaScript</li>
-        <li>React.js</li>
-        <li>Node.js</li>
-    </ul>
+}
 
-    <h2>Contact Me</h2>
-    <p>If you'd like to get in touch, feel free to reach out via email at [your email address] or connect with me on LinkedIn.</p>
+.container{
 
-</body>
+max-width:700px;
 
-</html>
+margin:auto;
+
+background:white;
+
+padding:30px;
+
+border-radius:20px;
+
+box-shadow:0 5px 20px rgba(0,0,0,.15);
+
+}
+
+h1{
+
+text-align:center;
+
+color:#1565C0;
+
+}
+
+img{
+
+display:block;
+
+margin:auto;
+
+width:200px;
+
+border-radius:50%;
+
+}
+
+h2{
+
+color:#444;
+
+}
+
+a{
+
+display:inline-block;
+
+margin-top:20px;
+
+padding:10px 20px;
+
+background:#1565C0;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:8px;
+
+}
+
+ 
+a:hover{
+background:#0d47a1;
+}
+.cards{
+display:flex;
+gap:16px;
+}
+.card{
+border:1px solid #ddd;
+border-radius:8px;
+padding:16px;
+flex:1;
+text-align:center;
+background:#fff;
+}
+.card img{
+width:100%;
+border-radius:4px;
+}
+a:hover{
+ 
+background:#0d47a1;
+ 
+}
+ 
+.cards{
+ 
+display:flex;
+ 
+gap:16px;
+ 
+}
+ 
+.card{
+ 
+border:1px solid #ddd;
+ 
+border-radius:8px;
+ 
+padding:16px;
+ 
+flex:1;
+ 
+text-align:center;
+ 
+background:#fff;
+ 
+}
+ 
+.card img{
+ 
+width:100%;
+ 
+border-radius:4px;
+ 
+}
+.social-links{margin-top:20px;text-align:center;
+}
+
+.social-links a{
+    display:inline-block;
+    margin:10px;
+    padding:12px 18px;
+    text-decoration:none;
+    color:white;
+    background:#1565C0;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.social-links a:hover{
+    transform:scale(1.05);
+    background:#0D47A1;
+}
+
+.social-links i{
+    margin-right:8px;
+}
+
+footer{
+    margin-top: 50px;
+    background: #1565C0;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+footer p {
+    margin: 15px;
+}
