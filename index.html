@@ -83,31 +83,26 @@
   <p id="formMessage"></p>
 </section>
 
-    <div class="Social-Links">
-      <a href="https://www.linkedin.com/in/rukhsana-wasiak-43561a94/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
-      <a href="https://github.com/roxywasiak" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
-    </div>
-    <script>
-      const form = document.getElementById("contactForm");
-      const formMessage = document.getElementById("formMessage");
+    <div class="social-links">
+    <a href="https://www.linkedin.com/in/rukhsana-wasiak-43561a94/" target="_blank">
+        <i class="fa-brands fa-linkedin"></i>
+    </a>
 
-      form.addEventListener("submit", function(event) {
-        event.preventDefault();
+    <a href="https://github.com/roxywasiak" target="_blank">
+        <i class="fa-brands fa-github"></i>
+    </a>
+</div>
+<section class="music-player">
+  <button id="musicButton">▶ Play Music</button>
 
-        const name = document.getElementById("name").value;
-        const message = document.getElementById("message").value;
-
-        const emailAddress = "your@email.com";
-        const subject = "Message from my About Me webpage";
-        const body = `Hi, ${message}`;
-
-        window.location.href = `mailto:${emailAddress}?subject=${subject}&body=${body}`;
-
-        formMessage.textContent = "Your email app should now open!";
-      });
-    </script>
+  <audio id="backgroundMusic" loop>
+    <source src="music/background.mp3" type="audio/mpeg">
+    Your browser does not support audio.
+  </audio>
+</section>
+    <script src="js/script.js"></script>
     <footer>
-    <p>&copy; 2024 Roxy Wasiak. All rights reserved.</p>
+    <p>&copy; 2026 Roxy Wasiak. All rights reserved.</p>
   </footer>
   </body>
   
