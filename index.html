@@ -10,7 +10,7 @@
   </head>
 
   <body>
-    <h1>About Me</h1>
+    <h1>Roxy Wasiak</h1>
     <p>
       Hello! My name is Roxy , and I am a passionate web developer with a love
       for creating beautiful and functional websites. I have experience in HTML,
@@ -27,21 +27,10 @@
       <li>Node.js</li>
     </ul>
 
-    <h2>Hobbies</h2>
-    <p>
-      In my free time, I enjoy reading books, playing video games, and exploring new places.
-    </p>
-
     <h2>Projects</h2>
     <p>
       Here are some of the projects I've worked on:
     </p>
-
-    <h2>Fun Fact</h2>
-    <p>
-      A fun fact about me is that I love to travel and have visited over 10
-      countries in the past few years. I enjoy experiencing different cultures
-      and trying new cuisines.
 
       <div class="cards">
         <div class="card">
@@ -62,18 +51,64 @@
         </div>
       </div>
 
+      <h2>Hobbies</h2>
+    <p>
+      In my free time, I enjoy reading books, playing video games, and exploring new places.
+    </p>
+    <h2>Fun Fact</h2>
+    <p>
+      A fun fact about me is that I love to travel and have visited over 10
+      countries in the past few years. I enjoy experiencing different cultures
+      and trying new cuisines.
+    </p>
+
     <h2>Contact Me</h2>
     <p>
       If you'd like to get in touch, feel free to reach out via email at [your
       email address] or connect with me on LinkedIn.
     </p>
 
+    <section class="contact-section">
+      <h2>Contact Form</h2>
+       <form id="contactForm">
+    <label for="name">Your Name</label>
+    <input type="text" id="name" placeholder="Enter your name" required>
+
+    <label for="message">Message</label>
+    <textarea id="message" placeholder="Write your message..." required></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
+
+  <p id="formMessage"></p>
+</section>
+
     <div class="Social-Links">
       <a href="https://www.linkedin.com/in/rukhsana-wasiak-43561a94/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
       <a href="https://github.com/roxywasiak" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
     </div>
-  </body>
-  <footer>
+    <script>
+      const form = document.getElementById("contactForm");
+      const formMessage = document.getElementById("formMessage");
+
+      form.addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        const name = document.getElementById("name").value;
+        const message = document.getElementById("message").value;
+
+        const emailAddress = "your@email.com";
+        const subject = "Message from my About Me webpage";
+        const body = `Hi, ${message}`;
+
+        window.location.href = `mailto:${emailAddress}?subject=${subject}&body=${body}`;
+
+        formMessage.textContent = "Your email app should now open!";
+      });
+    </script>
+    <footer>
     <p>&copy; 2024 Roxy Wasiak. All rights reserved.</p>
   </footer>
+  </body>
+  
 </html>
